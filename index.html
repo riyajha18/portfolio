@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahi | Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/imp_img/fevicon-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="user-select-none">
+    <header id="home" class="py-3 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fs-5 mx-sm-5">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><span class="text-primary">Riya Jha &hearts;</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <a class="nav-link main-navigation" aria-current="page" href="#home">Home |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-navigation" href="#about">About |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-navigation" href="#skills">Skills |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-navigation" href="#services">Services |</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link main-navigation" href="#contact">Contact Me |</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a
+                  class="nav-link main-navigation"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#login"
+                  >Login |</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link main-navigation"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#register"
+                  >Register</a
+                >
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container my-3 py-3">
+      <div class="my-carosual w-100">
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/carousel/carouse2.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/carousel/carousel3.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/carousel/carousel4.png"
+                class="d-block w-100 img-fluid"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" data-aos="fade-left">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title m-auto text-center" id="login">
+              Login <span class="text-primary">Here</span>
+            </h5>
+          </div>
+
+          <div class="modal-body">
+            <div class="mb-3 text-center m-auto">
+              <img
+                src="./img/imp_img//log_reg_avtar.png"
+                class="img-fluid"
+                height="300px"
+                alt=""
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Username"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <p class="text-center"><a href="#">Forgot Password?</a></p>
+              <p class="text-center">
+                Don't have an account
+                <a href="#" data-bs-toggle="modal" data-bs-target="#register"
+                  >SignUp?</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="register"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title m-auto text-center" id="register">
+              Register <span class="text-primary">Here</span>
+            </h5>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 text-center m-auto">
+              <img
+                src="./img/imp_img/log_reg_avtar.png"
+                class="img-fluid"
+                height="100px"
+                alt=""
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Email...."
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Password"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Confiorm Password "
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="number"
+                class="form-control"
+                id="formGroupExampleInput2"
+                placeholder="Phone No..."
+              />
+            </div>
+            <div class="mb-3">
+              <p class="text-center">
+                <input type="checkbox" /> Agree Term of User
+              </p>
+              <p class="text-center">
+                If You are a Member
+                <a href="#" data-bs-toggle="modal" data-bs-target="#login"
+                  >LogIn?</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container" data-aos="flip-up" data-aos-duration="1000">
+      <div class="my_banner">
+        <img
+          src="./img/imp_img/banner1.png"
+          class="w-100 img-thumbnail"
+          alt="first-banner"
+        />
+      </div>
+    </div> -->
+
+    <section class="about pt-5" id="about">
+      <div class="container">
+        <!-- <div
+            class="col-sm-12 col-md-6 col-lg-6 col-12 text-center"
+            data-aos="fade-right"
+          >
+            <img
+              src="./img/imp_img/White Simple Student CV Resume (1).jpg"
+              class="img-fluid w-100 mt-0"
+              alt=""
+            />
+          </div> -->
+        <div class="aboutUs text-center my-3">
+          
+          <h3 data-aos="fade-top">
+            About Me
+            <span class="text-primary"
+              ><i class="fa-solid fa-user-tie"></i
+            ></span>
+          </h3>
+          <hr class="m-auto w-25" />
+        </div>
+        <div class="row mx-4 py-4 align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
+            <h4>Hi I'am <span class="text-primary">Riya Jha</span></h4>
+            <p class="fs-6 fw-bold">
+              As a second-year BE student in computer engineering, I possess a well-rounded skill set encompassing front-end, back-end, and design aspects of web development.
+            </p>
+            <p class="fs-6 fw-bold">
+              Front-end development, full stack developers are adept at creating responsive and user-friendly interfaces using technologies such as
+              <span class="text-primary">HTML, CSS, and JavaScript.</span> I am familiar with popular frameworks and libraries like 
+              <span class="text-primary">React.</span>
+            </p>
+            <p class="fs-6 fw-bold">
+              On the back end, full stack developers work with server-side languages and frameworks such as 
+              <span class="text-primary">Java with Spring.</span> I am responsible for building the logic that powers the application, managing databases, and integrating third-party services.
+            </p>
+            <!-- <p class="fs-6 fw-bold">
+              A crucial aspect of a full stack developer's job is database management. I work with 
+              <span class="text-primary">relational databases like MySQL.</span>
+            </p> -->
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-5 fw-bold" id="skills">
+      <div class="container align-items-center justify-content-center">
+        <div class="my_service text-center my-3">
+          <h3 data-aos="fade-down">
+            Skills
+            <span class="text-primary"
+              ><i class="fa-solid fa-kitchen-set"></i
+            ></span>
+          </h3>
+          <hr class="m-auto w-25" />
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-4 col-12 text-center">
+            <div class="skills_img my-3" data-aos="fade-down">
+              <img src="./img/imp_img/skills.jpg" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-8 col-12">
+            <div class="skills_info my-3">
+              <div class="row g-3">
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-html5"></i>
+                      </h5>
+                      <h6 class="card-title text-center">HTML</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">100%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-css3-alt"></i>
+                      </h5>
+                      <h6 class="card-title text-center">CSS</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">98%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-square-js"></i>
+                      </h5>
+                      <h6 class="card-title text-center">JS</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">80%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-bootstrap"></i>
+                      </h5>
+                      <h6 class="card-title text-center">BS-5</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">100%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-solid fa-code"></i>
+                      </h5>
+                      <h6 class="card-title text-center">Gitbash</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">100%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-react"></i>
+                      </h5>
+                      <h6 class="card-title text-center">React</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">80%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-java"></i>
+                      </h5>
+                      <h6 class="card-title text-center">Php</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">98%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-brands fa-java"></i>
+                      </h5>
+                      <h6 class="card-title text-center">AWS</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">80%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-12" data-aos="fade-down">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title fs-1 text-center">
+                        <i class="fa-solid fa-database"></i>
+                      </h5>
+                      <h6 class="card-title text-center">MySql</h6>
+                      <h6 class="card-title text-center">
+                        <span class="text-primary">98%</span>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="container" data-aos="flip-up" data-aos-duration="1000">
+      <div class="my_banner">
+        <img
+          src="./img/imp_img/banner3.png"
+          class="w-100 img-thumbnail"
+          alt=""
+        />
+      </div> -->
+    </div>
+
+    <section class="services pt-5 fw-bold" id="services">
+      <div class="container">
+        <div class="my_service text-center my-3">
+          <h3 data-aos="fade-down">
+            Services
+            <span class="text-primary"><i class="fa-solid fa-gem"></i></span>
+          </h3>
+          <hr class="m-auto w-25" />
+        </div>
+        <div class="row my-3 py-3 align-items-center justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-right">
+            <img
+              src="./img/imp_img/service.png"
+              alt=""
+              class="img-fluid w-100"
+            />
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-left">
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-12 m-auto text-center my-4">
+                <!-- <h3>My Projects</h3> -->
+              </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+              <div class="col-sm-12 col-md-12 col-lg-6 my-3 mt-0">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Banner Designing</h5>
+                    <p class="card-text"></p>
+                    <!-- <a
+                      href="https://www.canva.com/folder/FAFMbjWxgc0"
+                      class="btn btn-primary"
+                      >See Samples</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Web development</h5>
+                    <!-- <p class="card-text">This Rock-Paper-Secissor game</p> -->
+                    <!-- <a
+                      href="https://mr07m.github.io/Rock-Paper-Scissor/"
+                      class="btn btn-primary"
+                      >See Samples</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">UI/UX Designing</h5>
+                    <!-- <p class="card-text">This is Tic-Tac-Toe Game</p> -->
+                    <!-- <a
+                      href="https://mr07m.github.io/Tic-Tac-Toe/"
+                      class="btn btn-primary"
+                      >See Samples</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Logo Designing</h5>
+                    <!-- <p class="card-text">This is A Resume builder</p> -->
+                    <!-- <a
+                      href="https://mr07m.github.io/Resume-builder/"
+                      class="btn btn-primary"
+                      >See Samples</a
+                    > -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <a href="https://github.com/dashboard" target="_blank">
+            <button class="btn text-primary" type="button">
+              More Project
+            </button></a
+          >
+        </div> -->
+      </div>
+
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="testimonials">
+      <div class="container align-items-center justify-content-center">
+        <div class="my_service text-center my-3">
+          <h3 data-aos="fade-down">
+            Client Feedback
+            <span class="text-primary"
+              ><i class="fa-solid fa-highlighter"></i
+            ></span>
+          </h3>
+          <hr class="m-auto w-25" />
+        </div>
+        <div class="row p-5">
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="zoom-in"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./img/testimonials/testi1.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                   </span
+                  ><p>Mr Krishna
+
+                  </p>
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="zoom-out"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="../img/testimonials/testi4.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                  </span>  <p>Mr Roshan</p>
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="flip-left"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./img/testimonials/testi3.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                    </span
+                  ><p>Ms Meenu</p>
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+<!-- 
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="flip-right"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./img/testimonials/testi4.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                    - Jha</span
+                  >
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="zoom-in"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="./img/testimonials/testi5.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                    - Chavan</span
+                  >
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-12 col-md-6 col-lg-4 col-12 my-3"
+            data-aos="zoom-out"
+          >
+            <div class="card w-80">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <img src="../img/testimonials/testi6.png" alt="" /><span
+                    class="text-muted mx-5"
+                  >
+                    - Jadhav</span
+                  >
+                </h5>
+                <p class="card-text fw-bold">
+                  "With supporting text below as a natural lead-in to additional
+                  content."
+                </p>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+                <span><i class="fa fa-star text-warning"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+<!-- 
+    <div class="container" data-aos="zoom-in" data-aos-duration="3000">
+      <div class="my_banner">
+        <img
+          src="./img/imp_img/banner2.png"
+          class="w-100 img-thumbnail"
+          alt=""
+        />
+      </div>
+    </div> -->
+
+    <section class="contact_us pt-5 fw-bold" id="contact">
+      <div class="container align-items-center justify-content-center">
+        <div class="contact text-center my-3">
+          <h3 data-aos="flip-left">
+            Contact Me
+            <span class="text-primary"
+              ><i class="fa-regular fa-address-book"></i
+            ></span>
+          </h3>
+          <hr class="m-auto w-25" />
+        </div>
+        <div class="row py-5 align-items-center justify-content-center">
+          <div
+            class="col-sm-12 col-md-6 col-12 text-center"
+            data-aos="flip-right"
+          >
+            <div class="row g-3 align-items-center justify-content-center">
+              <div class="col-md-6">
+                <img
+                  src="./img/imp_img/contact_us.jpg"
+                  class="img-fluid w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-12" data-aos="flip-up">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Phone No.</label>
+                <input type="number" class="form-control" id="inputPassword4" />
+              </div>
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label"
+                  >Feed Back</label
+                >
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  id="validationTextarea"
+                  placeholder="Messege..."
+                ></textarea>
+              </div>
+
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer border-top" data-aos="zoom-in">
+      <div class="container py-3">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-6 text-center">
+            <div class="left_part">
+              <h6 class="fs-4 py-4">
+                &copy; <span class="text-primary">Riya</span> Jha 2024.
+              </h6>
+              <ul class="d-flex justify-content-center">
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Home"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#home"
+                    ><i class="fa-solid fa-arrow-up"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="About"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#about"
+                    ><i class="fa fa-user"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Service"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#services"
+                    ><i class="fa-solid fa-gears"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Contact"
+                >
+                  <a class="mx-sm-2 mx-4 text-dark navigation" href="#contact"
+                    ><i class="fa-solid fa-phone"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center" data-aos="zoom-out">
+            <div class="right_part">
+              <h6 class="fs-4 py-4">
+                Connects With <span class="text-primary">Us</span>
+              </h6>
+              <ul class="text-center">
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="GitHub"
+                >
+                  <a href="#" class="mx-3 text-dark footer-social-icon"
+                    ><i class="fa-brands fa-github btn btn-white fs-5"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Instagram"
+                >
+                  <a href="#" class="mx-3 text-dark footer-social-icon"
+                    ><i class="fa-brands fa-instagram btn btn-white fs-5"></i
+                  ></a>
+                </li>
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Linked-In"
+                >
+                  <a href="#" class="mx-3 text-dark footer-social-icon"
+                    ><i class="fa-brands fa-linkedin btn btn-white fs-5"></i
+                  ></a>
+                </li>
+
+                <li
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Twitter"
+                >
+                  <a href="#" class="mx-3 text-dark footer-social-icon"
+                    ><i class="fa-brands fa-twitter btn btn-white fs-5"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var myTooltipEl = document.getElementById("myTooltip");
+      var tooltip = new bootstrap.Tooltip(myTooltipEl);
+
+      myTooltipEl.addEventListener("hidden.bs.tooltip", function () {
+        // do something...
+      });
+
+      tooltip.hide();
+    </script>
+  </body>
+</html>
